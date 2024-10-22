@@ -1,0 +1,152 @@
+{
+  "settings": {
+    "name": "Opencampus",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#f9f9ff"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/opencampus_1.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://opencamp-us.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://opencamp-us.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "5ukqlucslf",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "OpenCampus™ | Home Official Site",
+        "meta_descr": "Open Campus is enhancing the education system for teachers, learners, and institutions with innovative blockchain protocols and funding initiatives.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/opencampus.png\" alt=\"opencampus\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "urUHWTwGCd",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#f9f9ff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#f9f9ff\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Exploring OpenCampus: The Future of Decentralized Education</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Shipping options</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">As the digital landscape continues to evolve, so too does the way we approach education. Traditional educational models are increasingly being challenged by innovative platforms that prioritize accessibility, flexibility, and community. One such platform making waves in the education sector is <a href=\"https://opencamp-us.github.io/\" class=\"text-black\">OpenCampus</a>. This decentralized education initiative seeks to revolutionize the learning experience by leveraging blockchain technology, fostering collaboration, and empowering learners worldwide. In this blog, we will delve into what <a href=\"https://opencampus.xyz/\" class=\"text-black\">OpenCampus</a> is, how it works, its key features, and its potential impact on the future of education.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is OpenCampus?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">OpenCampus is a decentralized education platform that aims to provide learners with access to high-quality educational resources, courses, and community support. By utilizing blockchain technology, OpenCampus seeks to eliminate the barriers to education, offering an inclusive and flexible learning environment for individuals of all backgrounds. The platform integrates various educational resources, including courses, certifications, and mentorship opportunities, creating a comprehensive ecosystem for learners.<br><br><b>Key Objectives of OpenCampus</b><br><b>Accessibility:</b> OpenCampus aims to make education accessible to everyone, regardless of geographical location or socioeconomic status.<br><b>Decentralization:</b> By leveraging blockchain technology, OpenCampus promotes a decentralized approach to education, ensuring that no single entity controls the platform.<br><b>Community Engagement:</b> The platform encourages collaboration and interaction among learners, educators, and industry professionals, fostering a vibrant learning community.<br><b>Quality Assurance:</b> OpenCampus emphasizes the importance of high-quality educational content by allowing users to review and rate courses, ensuring that learners can make informed decisions.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>How OpenCampus Works</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Blockchain Technology</b><br>At the core of OpenCampus is blockchain technology, which provides a secure and transparent framework for managing educational content and user interactions. The decentralized nature of blockchain ensures that no single entity can manipulate or control the platform, fostering trust among users.<br><br><b>2. Course Creation and Management</b><br>OpenCampus allows educators and industry professionals to create and manage their courses. Instructors can upload course materials, set pricing, and define learning outcomes. The platform’s user-friendly interface makes it easy for educators to design engaging and interactive courses.<br><br><b>3. Token Economy</b><br>OpenCampus utilizes a token economy to facilitate transactions within the platform. Users can earn tokens by creating content, participating in courses, and engaging with the community. These tokens can be used to pay for courses, access premium content, or reward contributors, creating a self-sustaining ecosystem.<br><br><b>4. Community Features</b><br>OpenCampus emphasizes community engagement by providing forums, discussion boards, and mentorship opportunities. Learners can connect with peers, ask questions, share insights, and collaborate on projects. This sense of community enhances the learning experience and fosters meaningful connections.<br><br><b>5. Certification and Credentials</b><br>Upon completing a course, learners can earn certifications and digital credentials that are securely stored on the blockchain. These credentials serve as verifiable proof of skills and knowledge, enhancing learners’ employability and credibility in the job market.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Key Features of OpenCampus</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. User-Centric Design</b><br>OpenCampus is designed with the user experience in mind. The platform features an intuitive interface that makes it easy for learners to navigate, search for courses, and interact with educators and peers. The user-centric approach ensures that learners can focus on acquiring knowledge without the distractions of a complicated interface.<br><br><b>2. Diverse Course Offerings</b><br>OpenCampus offers a wide range of courses across various subjects and disciplines. From technical skills like programming and data science to creative fields like art and design, learners can find courses that align with their interests and career goals. This diverse selection caters to a broad audience, making education more inclusive.<br><br><b>3. Peer-to-Peer Learning</b><br>The platform encourages peer-to-peer learning by facilitating discussions and collaborations among learners. Participants can share their insights, ask questions, and support each other throughout the learning process. This collaborative approach enhances understanding and retention of knowledge.<br><br><b>4. Continuous Feedback and Improvement</b><br>OpenCampus values feedback from its users. Learners can provide ratings and reviews for courses, helping to ensure that content remains relevant and high-quality. Educators can use this feedback to improve their courses and adapt to the needs of their learners.<br><br><b>5. Global Reach</b><br>By eliminating geographical barriers, OpenCampus provides learners from around the world with access to educational resources. This global reach enables individuals from diverse backgrounds to connect, share knowledge, and collaborate, enriching the learning experience for everyone involved.<br><br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Importance of OpenCampus in the Education Landscape</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Addressing Educational Inequality</b><br>OpenCampus aims to address educational inequality by providing access to high-quality learning resources for individuals who may not have had the opportunity to pursue traditional education. By offering affordable and flexible courses, the platform empowers learners from all walks of life to pursue their educational goals.<br><br><b>2. Adapting to Modern Learning Needs</b><br>As the workforce evolves, so too do the skills required for success. OpenCampus recognizes the need for continuous learning and skill development in a rapidly changing job market. By offering diverse courses and up-to-date content, the platform equips learners with the tools they need to thrive in their careers.<br><br><b>3. Fostering Lifelong Learning</b><br>OpenCampus promotes the concept of lifelong learning, encouraging individuals to continuously seek knowledge and improve their skills. The platform’s flexibility allows learners to pursue education at their own pace, making it easier to integrate learning into their busy lives.<br><br><b>4. Enhancing Collaboration and Networking</b><br>By fostering a sense of community, OpenCampus enhances collaboration and networking opportunities among learners and educators. This interconnectedness allows individuals to build relationships, share insights, and collaborate on projects, creating a rich learning environment.<br><br><b>5. Promoting Skill-Based Hiring</b><br>As employers increasingly prioritize skills over traditional degrees, OpenCampus positions itself as a valuable resource for job seekers. The platform’s certifications and credentials, securely stored on the blockchain, provide verifiable proof of skills, making it easier for learners to demonstrate their expertise to potential employers.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Use Cases of OpenCampus</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Professional Development</b><br>OpenCampus serves as a platform for professionals seeking to enhance their skills and advance their careers. By enrolling in relevant courses, individuals can acquire new competencies that align with their career goals, making them more competitive in the job market.<br><br><b>2. Upskilling for Career Transition</b><br>For individuals looking to transition into new fields, OpenCampus offers a wealth of resources and courses to facilitate skill acquisition. Whether someone wants to move from marketing to data science or from teaching to software development, the platform provides the necessary tools for a successful career change.<br><br><b>3. Supporting Entrepreneurs</b><br>Entrepreneurs can leverage OpenCampus to gain knowledge and skills essential for running a successful business. From marketing strategies to financial management, the platform offers courses that empower aspiring entrepreneurs to make informed decisions and drive their ventures forward.<br><br><b>4. Collaborative Projects and Research</b><br>OpenCampus facilitates collaboration among learners, making it an ideal platform for group projects and research initiatives. Students can form teams, share ideas, and work together on projects, enhancing their learning experience while building valuable teamwork skills.<br><br><b>5. Accessibility for Remote Learning</b><br>With the rise of remote work and online learning, OpenCampus provides a flexible solution for individuals seeking education from home. The platform’s online courses and community features allow learners to engage and collaborate without the need for physical presence.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges and Considerations</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Quality Control</b><br>While OpenCampus emphasizes quality assurance through user ratings and reviews, ensuring the quality of educational content remains a challenge. The platform must implement robust mechanisms to vet course creators and maintain high standards for educational materials.<br><br><b>2. Technological Barriers</b><br>Despite its mission to promote accessibility, some learners may face technological barriers, such as limited internet access or lack of familiarity with blockchain technology. OpenCampus must consider strategies to address these challenges and ensure that its platform is accessible to all.<br><br><b>3. Regulatory Compliance</b><br>As a decentralized education platform, OpenCampus must navigate the complex landscape of educational regulations and compliance. Ensuring that courses meet local educational standards and addressing legal considerations will be crucial for the platform’s success.<br><br><b>4. Market Competition</b><br>The education technology space is highly competitive, with numerous platforms vying for users’ attention. OpenCampus must continually innovate and differentiate itself to attract and retain learners in a crowded market.<br><br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Future of OpenCampus</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Expanding Course Offerings</b><br>OpenCampus plans to expand its course offerings by collaborating with industry experts and educational institutions. By continuously updating and diversifying its content, the platform can remain relevant and meet the evolving needs of learners.<br><br><b>2. Enhancing User Experience</b><br>Improving the user experience will be a key focus for OpenCampus. The platform will invest in user interface enhancements, personalized learning pathways, and advanced analytics to provide learners with a more tailored and engaging experience.<br><br><b>3. Building Strategic Partnerships</b><br>OpenCampus aims to forge strategic partnerships with organizations, businesses, and educational institutions to enhance its credibility and reach. Collaborations can lead to co-branded courses, mentorship opportunities, and access to industry insights.<br><br><b>4. Embracing Emerging Technologies</b><br>To stay at the forefront of educational innovation, OpenCampus will explore the integration of emerging technologies such as virtual reality (VR), augmented reality (AR), and artificial intelligence (AI). These technologies can enhance the learning experience and provide immersive educational opportunities.<br><br><b>5. Global Outreach</b><br>OpenCampus plans to expand its reach to learners around the world, focusing on regions with limited access to quality education. By offering localized content and language support, the platform can empower individuals in underserved communities.<br><br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">OpenCampus represents a transformative approach to education, leveraging the power of decentralization and blockchain technology to create an inclusive and flexible learning environment. By prioritizing accessibility, community engagement, and quality education, OpenCampus is poised to make a significant impact on the future of learning.<br><br>As the platform continues to evolve, it promises to unlock new opportunities for learners, educators, and industry professionals alike. In a world where continuous learning is essential for success, OpenCampus stands as a beacon of innovation, inviting individuals to explore, collaborate, and thrive in their educational journeys.<br><br>In the age of digital transformation, OpenCampus embodies the spirit of empowerment and growth, paving the way for a brighter future in education. Whether you are a lifelong learner, a professional seeking to upskill, or an educator eager to share knowledge, OpenCampus offers a dynamic platform to connect, learn, and succeed in the ever-changing landscape of education.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "urUHX5yi61",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
